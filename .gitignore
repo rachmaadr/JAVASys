@@ -1,1 +1,11 @@
-.vscode
+# Java class files
+*.class
+
+# VS Code
+.vscode/
+
+# Build output
+bin/
+out/
+build/
+target/
