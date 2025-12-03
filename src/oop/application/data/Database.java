@@ -1,10 +1,12 @@
 package oop.application.data;
 
+import oop.application.annotation.NotBlank;
 import oop.application.error.DatabaseError;
 
 public class Database implements AutoCloseable {
-
+  @NotBlank(message = "Username is Required")
   private String username;
+  @NotBlank
   private String password;
   private boolean connected = false;
 
